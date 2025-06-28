@@ -23,9 +23,9 @@ export class UserService {
 
   // Simula uma lista de usuários como se viesse de uma base de dados ou API
   private users: User[] = [
-    { id: 1, name: 'Ana Costa', email: 'ana.costa@email.com', role: 'Admin' },
-    { id: 2, name: 'Bruno Lima', email: 'bruno.lima@email.com', role: 'Usuário' },
-    { id: 3, name: 'Carla Mendes', email: 'carla.mendes@email.com', role: 'Editor' }
+    { id: 1, name: 'William Machado', email: 'will.dsm@email.com', role: 'Admin' },
+    { id: 2, name: 'Enrico', email: 'bruno.lima@email.com', role: 'Usuário' },
+    { id: 3, name: 'Ana Paula', email: 'carla.mendes@email.com', role: 'Editor' }
   ];
 
   // Construtor da classe (vazio neste caso, mas útil para injetar outros serviços futuramente)
