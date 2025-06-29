@@ -1,0 +1,23 @@
+/* Estiliza o contêiner do cartão */
+.user-card {
+  border: 1px solid #ccc;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+}
+
+/* Estilo do botão */
+button {
+  background-color: #e74c3c; /* vermelho */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Efeito hover ao passar o mouse no botão */
+button:hover {
+  background-color: #c0392b; /* tom mais escuro */
+}

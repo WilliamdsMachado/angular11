@@ -1,0 +1,8 @@
+<h3>➕ Novo Usuário</h3>
+
+<form (ngSubmit)="submitForm()">
+  <input type="text" [(ngModel)]="user.name" name="name" placeholder="Nome" required>
+  <input type="email" [(ngModel)]="user.email" name="email" placeholder="Email" required>
+  <input type="text" [(ngModel)]="user.role" name="role" placeholder="Cargo" required>
+  <button type="submit">{{ initialUser ? 'Salvar' : 'Adicionar' }}</button>
+</form>

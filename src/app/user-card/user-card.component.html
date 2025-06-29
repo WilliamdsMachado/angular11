@@ -1,5 +1,9 @@
-<div style="border: 1px solid #ccc; padding: 10px; border-radius: 5px; margin-bottom: 10px;">
-  <strong>{{ user.name }}</strong><br>
-  <small>{{ user.email }}</small><br>
-  <em>{{ user.role }}</em>
+<!-- Container estilizado para o cartão de usuário -->
+<div class="user-card">
+  <p><strong>👤 Nome:</strong> {{ user.name }}</p>     <!-- Exibe o nome do usuário -->
+  <p><strong>📧 Email:</strong> {{ user.email }}</p>     <!-- Exibe o e-mail -->
+  <p><strong>👔 Cargo:</strong> {{ user.role }}</p> <!-- Exibe o cargo ou função com estilo itálico -->
+
+  <button (click)="onEdit()">✏️ Editar</button> <!-- Botão que aciona o método onEdit ao ser clicado -->
+  <button (click)="onDelete()">🗑️ Excluir</button><!-- Botão que aciona o método onDelete ao ser clicado -->
 </div>

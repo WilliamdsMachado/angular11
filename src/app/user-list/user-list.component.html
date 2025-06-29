@@ -1,7 +1,20 @@
 <h2>📋 Lista de Usuários</h2>
 
-<!-- Renderiza um cartão para cada usuário da lista -->
+<input
+  type="text"
+  placeholder="🔍 Buscar por nome ou email..."
+  [(ngModel)]="searchTerm"
+  (ngModelChange)="filterUsers()" />
+
+<app-user-form
+  [initialUser]="editingUser"
+  (create)="addUser($event)"
+  (update)="updateUser($event)">
+</app-user-form>
+
 <app-user-card
   *ngFor="let user of users"
-  [user]="user">
+  [user]="user"
+  (edit)="editUser($event)"
+  (delete)="deleteUser($event)">
 </app-user-card>
